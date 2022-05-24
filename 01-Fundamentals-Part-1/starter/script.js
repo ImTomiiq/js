@@ -10,7 +10,7 @@ console.log(
 
 let kokot = true;
 
-console.log(typeof kokot);
+console.log(typeof kokodt);
 console.log(typeof 23);
 
 kokot = "ANOOOO";
