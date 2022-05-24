@@ -6,12 +6,17 @@ const language = "Slovenčina";
 
 console.log(
   `Krajina: ${country}, Jazyk ${language}, Kontinent ${continent} a Populácia ${population} Ostrovná krajina? ${isIsland}`
-); */
+); 
 
-let kokot = true;
+let markMass = 78;
+let johnMass = 92;
 
-console.log(typeof kokodt);
-console.log(typeof 23);
+let markHeight = 1.69;
+let johnHeight = 1.95;
 
-kokot = "ANOOOO";
-console.log(typeof kokot);
+const markBMI = console.log(markMass / (markHeight * markHeight));
+
+const johnBMI = console.log(johnMass / (johnHeight * johnHeight));
+
+let markHigherBMI = true;
+console.log(markHigherBMI); */
