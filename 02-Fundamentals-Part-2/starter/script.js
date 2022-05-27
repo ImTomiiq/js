@@ -103,7 +103,7 @@ const calcAverage = (scoreDolphins, scoreKoalas) => {
 
 calcAverage(scoreDolphins, scoreKoalas); */
 
-const friends = ["Michael", "Steaven", "Peter"];
+/*const friends = ["Michael", "Steaven", "Peter"];
 
 console.log(friends[0]);
 console.log(friends[friends.length - 1]);
@@ -146,4 +146,79 @@ console.log(ages);
 
 ages.shift();
 console.log(ages.indexOf(27));
-console.log(ages.includes(50));
+console.log(ages.includes(50)); */
+
+/*const bill = [125, 555, 44];
+const tipCalc =
+  bill >= 50 && bill <= 300
+    ? console.log(
+        `The bill was ${bill}, the tip was ${} and total value ${totalLowValue}`
+      )
+    : console.log(
+        `The bill was ${bill}, the tip was ${} and total value ${totalHigherTip}`
+      ); */
+
+/*const bills = [125, 555, 44];
+
+const calcTip = function (bill) {
+  return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+};
+
+const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
+
+const total = [tips[0] + bills[0], tips[1] + bills[1], tips[2] + bills[2]];
+console.log(bills);
+console.log(tips);
+console.log(total); */
+
+/*
+console.log(jonas.age);
+
+const nameKey = "Name";
+console.log(jonas["first" + nameKey]);
+console.log(jonas["last" + nameKey]);
+*/
+/*const interestedIn = prompt(
+  "What do you want to know about Jonas? Choose between job, age, firstname and lastName"
+);
+
+if (jonas[interestedIn]) {
+  console.log(jonas[interestedIn]);
+} else {
+  console.log("Wrong request");
+}
+
+jonas.location = "Slovakia";
+jonas["twitter"] = "@kkokot";
+
+console.log(jonas); */
+
+/*console.log(
+  `${jonas.firstName} has ${jonas.friends.length} friends and his best friend is called ${jonas.friends[0]}`
+); */
+
+const jonas = {
+  firstName: "Jonas",
+  lastName: "kokot",
+  birthYear: 1990,
+  job: "teacher",
+  friends: ["Michael", "kokot", "ivan"],
+  hasDriversLicense: false,
+
+  /*calcAge: function () {
+    return 2037 - this.age;
+  }, */
+
+  calcAge: function () {
+    this.age = 2037 - this.birthYear;
+    return this.age;
+  },
+};
+
+jonas.calcAge();
+
+console.log(
+  `${jonas.firstName} is ${jonas.age}-year old ${jonas.job}, and he ${
+    jonas.hasDriversLicense === true ? "has" : "has not"
+  } a driver's license`
+);
