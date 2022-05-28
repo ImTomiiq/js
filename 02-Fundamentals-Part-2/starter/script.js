@@ -197,28 +197,76 @@ console.log(jonas); */
   `${jonas.firstName} has ${jonas.friends.length} friends and his best friend is called ${jonas.friends[0]}`
 ); */
 
-const jonas = {
+/* const jonas = {
   firstName: "Jonas",
   lastName: "kokot",
   birthYear: 1990,
   job: "teacher",
   friends: ["Michael", "kokot", "ivan"],
   hasDriversLicense: false,
-
-  /*calcAge: function () {
-    return 2037 - this.age;
-  }, */
-
   calcAge: function () {
     this.age = 2037 - this.birthYear;
     return this.age;
+  },
+  getSummary: function () {
+    return `${this.firstName} is ${this.calcAge()}-year old ${
+      this.job
+    }, and he ${
+      this.hasDriversLicense === true ? "has" : "has not"
+    } a driver's license`;
   },
 };
 
 jonas.calcAge();
 
-console.log(
-  `${jonas.firstName} is ${jonas.age}-year old ${jonas.job}, and he ${
-    jonas.hasDriversLicense === true ? "has" : "has not"
-  } a driver's license`
-);
+console.log(jonas.getSummary()); */
+/*
+const mark = {
+  fullname: "Mark Miller",
+  mass: 78,
+  height: 1.69,
+  calcBMI: function () {
+    this.BMI = this.mass / (this.height * this.height);
+    return this.BMI;
+  },
+};
+
+const john = {
+  fullname: "John Smith",
+  mass: 92,
+  height: 1.95,
+  calcBMI: function () {
+    this.BMI = this.mass / (this.height * this.height);
+    return this.BMI;
+  },
+};
+
+console.log(`Mark's BMI: ${mark.calcBMI()} || John's BMI: ${john.calcBMI()}`);
+
+if (mark.BMI > john.BMI) {
+  console.log(`Mark's BMI (${mark.BMI}) is higher than John's (${john.BMI})`);
+} else {
+  console.log(`Mark's BMI (${mark.BMI}) is lower than John's (${john.BMI})`);
+}
+
+for (let rep = 1; rep <= 10; rep++) {
+  console.log(` cau po ${rep}x`);
+}
+*/
+/*const jonas = ["Jonas", "dsa", "Jonfgdas", "Jondasas", "Jonaws", "Jonadws"];
+
+const types = [];
+for (let i = 0; i < jonas.length; i++) {
+  console.log(jonas[i]);
+
+  types[i] = typeof jonas[i];
+
+  console.log(types[i]);
+  types.push(typeof jonas[i]);
+} */
+
+const years = [1991, 2007, 1969, 2020];
+
+for (let i = years.length - 1; i >= 0; i--) {
+  console.log(years[i]);
+}
