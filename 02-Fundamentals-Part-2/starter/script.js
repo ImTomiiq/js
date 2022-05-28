@@ -316,7 +316,7 @@ if (lang === "English" && population === 50000000 && isIsland !== true) {
   console.log("Portugal does not meet your criteria");
 } */
 
-const language = "chinese";
+/*const language = "chinese";
 
 switch (language) {
   case "chinese":
@@ -339,4 +339,12 @@ switch (language) {
   default:
     console.log("Great language too :D");
     break;
-}
+}*/
+const population = 33000000;
+
+const populationCalc =
+  population >= 33000000
+    ? "POrtuagals population is above average"
+    : "Portugals population is belowe average";
+
+console.log(`${populationCalc}`);
