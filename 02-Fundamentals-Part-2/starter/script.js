@@ -340,7 +340,7 @@ switch (language) {
     console.log("Great language too :D");
     break;
 }*/
-const population = 33000000;
+/*const population = 33000000;
 
 const populationCalc =
   population >= 33000000
@@ -348,3 +348,16 @@ const populationCalc =
     : "Portugals population is belowe average";
 
 console.log(`${populationCalc}`);
+*/
+const percentageOfWorld1 = function (population) {
+  return 7950063898 / population;
+};
+const describePopulation = function (country, population) {
+  console.log(
+    `${country} has ${population} milion poeple, which is about ${percentageOfWorld1(
+      1449960124
+    )}% of the world`
+  );
+};
+
+describePopulation("China", 1441);
