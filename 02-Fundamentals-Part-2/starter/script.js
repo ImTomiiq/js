@@ -265,8 +265,31 @@ for (let i = 0; i < jonas.length; i++) {
   types.push(typeof jonas[i]);
 } */
 
-const years = [1991, 2007, 1969, 2020];
+/*const years = [1991, 2007, 1969, 2020];
 
 for (let i = years.length - 1; i >= 0; i--) {
   console.log(years[i]);
+} */
+
+/*let dice = Math.trunc(Math.random() * 6) + 1;
+console.log(dice);
+
+while (dice !== 6) {
+  console.log(`You rolled ${dice}`);
+  dice = Math.trunc(Math.random() * 6) + 1;
+  if (dice === 6) console.log("Loop is about to end...");
 }
+*/
+
+const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+const tips = [];
+const totals = [];
+
+for (let y = 0; y <= bills.length - 1; y++) {
+  const calcTip = function (bills) {
+    return bills >= 50 && bills <= 300 ? bills * 0.15 : bills * 0.2;
+  };
+  bills.push(tips[y]);
+  console.log(calcTip(bills[y]));
+}
+console.log(tips);
