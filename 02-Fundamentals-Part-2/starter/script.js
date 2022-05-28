@@ -305,3 +305,13 @@ const calcAverage = function (arr) {
 };
 
 console.log(calcAverage([1, 5, 3])); */
+
+let lang = "English";
+let population = 50000000;
+let isIsland = false;
+
+if (lang === "English" && population === 50000000 && isIsland !== true) {
+  console.log("You should live in Portugal");
+} else {
+  console.log("Portugal does not meet your criteria");
+}
