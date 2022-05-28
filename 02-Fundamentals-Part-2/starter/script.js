@@ -281,7 +281,7 @@ while (dice !== 6) {
 }
 */
 
-const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+/*const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
 const tips = [];
 const totals = [];
 
@@ -289,7 +289,19 @@ for (let y = 0; y <= bills.length - 1; y++) {
   const calcTip = function (bills) {
     return bills >= 50 && bills <= 300 ? bills * 0.15 : bills * 0.2;
   };
-  bills.push(tips[y]);
-  console.log(calcTip(bills[y]));
+  tips.push(calcTip(bills[y]));
+  totals.push(calcTip(bills[y]) + bills[y]);
 }
+console.log(bills);
 console.log(tips);
+console.log(totals);
+
+const calcAverage = function (arr) {
+  let sum = 0;
+  for (let i = 0; i < arr.length; i++) {
+    sum += arr[i];
+  }
+  return sum / arr.length;
+};
+
+console.log(calcAverage([1, 5, 3])); */
