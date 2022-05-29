@@ -349,7 +349,7 @@ const populationCalc =
 
 console.log(`${populationCalc}`);
 */
-const percentageOfWorld1 = function (population) {
+/*const percentageOfWorld1 = function (population) {
   return 7950063898 / population;
 };
 const describePopulation = function (country, population) {
@@ -361,3 +361,6 @@ const describePopulation = function (country, population) {
 };
 
 describePopulation("China", 1441);
+*/
+
+const populations = [150, 1250, 35871, 40000];
