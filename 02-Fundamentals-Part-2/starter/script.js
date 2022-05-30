@@ -363,4 +363,4 @@ const describePopulation = function (country, population) {
 describePopulation("China", 1441);
 */
 
-const populatdsaions = [150, 1250, 35871, 40000];
+const populatdssaions = [150, 1250, 35871, 40000];
