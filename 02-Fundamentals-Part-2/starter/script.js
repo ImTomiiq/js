@@ -363,4 +363,13 @@ const describePopulation = function (country, population) {
 describePopulation("China", 1441);
 */
 
-const populatdssaions = [150, 1250, 35871, 40000];
+const populations = [3, 1250, 35871, 40000];
+
+const percentages = [];
+
+for (let i = 0; i <= populations.length; i++) {
+  const percentageOfWorld1 = function (populations) {
+    return populations[i] / 7950063898;
+  };
+  console.log(percentageOfWorld1(populations));
+}
